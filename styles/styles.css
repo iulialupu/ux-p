@@ -33,6 +33,15 @@ body {
     width: 100%;
     overflow-x: hidden;
 }
+button{
+    padding: 0;
+    color: var(--text-color);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    display: inline;
+}
 ul{
     list-style: none;
 }
@@ -118,13 +127,15 @@ ul{
     align-items: center;
 }
 .menu-list a{
-    color: var(--text-color);
     text-decoration: none;
 }
 .menu-text{
+    color: var(--text-color);
     padding: 16px 40px;
     line-height: 28px;
     transition: color 0.3s;
+    /* border: none;
+    background-color: transparent; */
 }
 .menu-text:hover{
     color: var(--accent-color);

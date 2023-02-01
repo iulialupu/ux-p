@@ -21,7 +21,7 @@
   <body>
     <nav class="nav">
       <div class="container flex">
-        <a href="/" class="logo">
+        <a href="./" class="logo">
           <svg
             class="logo-img"
             width="39"
@@ -43,17 +43,19 @@
 
         <ul class="menu-list">
           <li>
-            <a href="/#work" class="menu-text" onclick="onOpenWork()">Work</a>
+            <a href="./#work" class="menu-text" onclick="onOpenWork()">Work</a>
           </li>
           <li><span class="menu-line"></span></li>
           <li>
-            <a href="#about" class="menu-text" onclick="openAbout()">About </a>
+            <span role="button" class="menu-text" onclick="openAbout()"
+              >About
+            </span>
           </li>
           <li><span class="menu-line"></span></li>
           <li>
-            <a href="#contact" class="menu-text" onclick="openContact()"
+            <span role="button" class="menu-text" onclick="openContact()"
               >Contact
-            </a>
+            </span>
           </li>
         </ul>
       </div>
