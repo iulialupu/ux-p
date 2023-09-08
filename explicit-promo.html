@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Iuliana Lupu | Portfolio - 01. Explicit-Promotions Landing Page Redesign
+    </title>
+    <meta name="keywords" content="landing page redesign, case study, UX, UI" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <div class="container flex">
+        <a href="./" class="logo">
+          <svg
+            class="logo-img"
+            width="39"
+            height="70"
+            viewBox="0 0 39 70"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1.07469 24.7838C5.47258 22.3642 9.87047 19.9709 14.2952 17.6302C17.6204 15.8681 21.1333 14.2375 23.8418 11.5812C25.9335 9.52978 27.5961 6.79457 27.2743 3.79636C27.0061 1.19265 25.0217 -0.33276 22.3669 0.0617415C17.2986 0.771845 15.1265 6.63677 13.8125 10.7659C12.9543 13.5011 12.3108 16.2889 11.5599 19.0767C11.104 20.7862 10.4604 22.4431 9.9241 24.1263C8.66373 28.0451 7.48381 31.9638 6.25026 35.9088C6.06254 36.54 6.78658 36.9871 7.32291 36.6978C9.25369 35.6984 10.2995 33.5681 12.4985 32.9632C14.8047 32.332 16.5477 34.2519 18.5858 34.9883C22.5278 36.4085 26.4698 34.9357 28.6956 31.4904C28.2665 31.3063 27.8106 31.1222 27.3816 30.9381C26.2553 37.8024 24.1368 44.4563 22.0987 51.1103C20.7311 55.5813 19.9534 60.552 17.7008 64.7074C16.7355 66.4695 15.2874 68.3105 13.1152 68.5472C10.4872 68.8628 9.79002 66.2591 10.0045 64.1814C10.5677 58.7373 15.6092 56.0021 20.3289 54.2926C23.4932 53.1354 26.8452 52.4516 29.9559 51.1629C33.1203 49.8479 36.0701 48.0857 38.7517 46.0343C39.4757 45.482 38.4567 44.4826 37.7327 45.0349C34.7829 47.2704 31.4576 49.1904 27.9447 50.4002C24.8876 51.4785 21.6965 52.2149 18.6931 53.3984C13.732 55.3446 9.11961 58.5532 8.58328 64.1814C8.39557 66.1802 8.85144 68.5735 10.8359 69.5729C12.6326 70.4934 14.9119 69.8096 16.4137 68.6261C20.1411 65.6542 21.1065 60.026 22.2596 55.7128C24.4586 47.5597 27.4084 39.6697 28.8028 31.3326C28.9369 30.5699 27.9447 30.0702 27.4888 30.7803C26.2821 32.6476 24.4586 33.9889 22.1524 34.1204C19.8462 34.2519 18.0495 33.1473 16.1187 32.0953C14.5365 31.2274 12.9275 31.1748 11.2381 31.9112C9.38777 32.7265 8.39557 34.5675 6.6525 35.4617C7.00111 35.7247 7.34973 35.9877 7.72516 36.2507C9.73638 29.7809 12.0426 23.3636 13.7052 16.7886C14.8583 12.265 15.9042 6.58417 19.3903 3.13885C20.7311 1.82385 23.815 0.324743 25.2899 2.24465C27.0598 4.53276 25.1558 8.05698 23.5468 9.84538C20.892 12.791 17.2182 14.4742 13.7857 16.2889C9.28051 18.6559 4.82899 21.1018 0.350652 23.5477C-0.453839 23.9948 0.270203 25.2309 1.07469 24.7838Z"
+              fill="#2E3646"
+            />
+          </svg>
+          <div class="logo-text">
+            <span class="name-line">Iuliana</span>
+            <span class="name-line">Lupu</span>
+          </div>
+        </a>
+
+        <ul class="menu-list">
+          <li>
+            <a href="./#work" class="menu-text" onclick="onOpenWork()">Work</a>
+          </li>
+          <li><span class="menu-line"></span></li>
+          <li>
+            <span role="button" class="menu-text" onclick="openAbout()"
+              >About
+            </span>
+          </li>
+          <li><span class="menu-line"></span></li>
+          <li>
+            <span role="button" class="menu-text" onclick="openContact()"
+              >Contact
+            </span>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="modal-container" id="about">
+      <div class="container flex-right">
+        <div class="modal">
+          <button class="round-button close-modal" onclick="closeAbout()">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.75 6.81984L17.1802 5.25L12 10.4302L6.81984 5.25L5.25 6.81984L10.4302 12L5.25 17.1802L6.81984 18.75L12 13.5698L17.1802 18.75L18.75 17.1802L13.5698 12L18.75 6.81984Z"
+                fill="#2E3646"
+              />
+            </svg>
+          </button>
+          <div class="modal-content">
+            <h2 class="project-title modal-heading">About Me</h2>
+            <p>
+              I am a starting UX/UI designer, aspiring to grow my expertise in
+              designing digital products.
+            </p>
+            <p>
+              I have shifted my career from front-end developer to the UX/UI
+              design because I enjoy the process of coming up with ideas,
+              learning about the user needs, applying strategies, to seeing the
+              final designs. As a first step, I have taken the Google UX Design
+              Certificate, that helped me acquire fundamental knowledge about
+              the UX process. I have also completed along three projects that
+              are presented in this portfolio.
+            </p>
+            <p>
+              I am looking forward for opportunities to apply my creativity,
+              attention to details, curiosity to learn, and test innovative
+              ideas on projects that are inspiring, useful, and with a positive
+              impact, all while continually learning and growing as a designer
+              and as a person.
+            </p>
+            <div class="button-container">
+              <div class="button-label">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.75 3C6.35218 3 5.97064 3.15804 5.68934 3.43934C5.40804 3.72064 5.25 4.10218 5.25 4.5V19.5C5.25 19.8978 5.40804 20.2794 5.68934 20.5607C5.97064 20.842 6.35218 21 6.75 21H17.25C17.6478 21 18.0294 20.842 18.3107 20.5607C18.592 20.2794 18.75 19.8978 18.75 19.5V10.5H13.5C12.9033 10.5 12.331 10.2629 11.909 9.84099C11.4871 9.41903 11.25 8.84674 11.25 8.25V3H6.75ZM12.75 4.06066L17.6893 9H13.5C13.3011 9 13.1103 8.92098 12.9697 8.78033C12.829 8.63968 12.75 8.44891 12.75 8.25V4.06066ZM4.62868 2.37868C5.19129 1.81607 5.95435 1.5 6.75 1.5H11.379C11.9755 1.50009 12.5476 1.73707 12.9695 2.15883L12.9695 2.15889L19.5912 8.78051C20.0129 9.20237 20.2499 9.77445 20.25 10.371V19.5C20.25 20.2956 19.9339 21.0587 19.3713 21.6213C18.8087 22.1839 18.0456 22.5 17.25 22.5H6.75C5.95435 22.5 5.19129 22.1839 4.62868 21.6213C4.06607 21.0587 3.75 20.2956 3.75 19.5V4.5C3.75 3.70435 4.06607 2.94129 4.62868 2.37868ZM7.5 13.5C7.5 13.0858 7.83579 12.75 8.25 12.75H15.75C16.1642 12.75 16.5 13.0858 16.5 13.5C16.5 13.9142 16.1642 14.25 15.75 14.25H8.25C7.83579 14.25 7.5 13.9142 7.5 13.5ZM7.5 17.25C7.5 16.8358 7.83579 16.5 8.25 16.5H15.75C16.1642 16.5 16.5 16.8358 16.5 17.25C16.5 17.6642 16.1642 18 15.75 18H8.25C7.83579 18 7.5 17.6642 7.5 17.25Z"
+                    fill="#2E3646"
+                  />
+                </svg>
+              </div>
+              <span class="button-text">CV / Resume</span>
+              <a
+                href="./assets/Iuliana-Lupu-CV.pdf"
+                class="round-button"
+                download="Iuliana-Lupu--Resume--Product-Design"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 1.5C12.4142 1.5 12.75 1.83579 12.75 2.25V14.6893L15.2197 12.2197C15.5126 11.9268 15.9874 11.9268 16.2803 12.2197C16.5732 12.5126 16.5732 12.9874 16.2803 13.2803L12.5303 17.0303C12.2374 17.3232 11.7626 17.3232 11.4697 17.0303L7.71967 13.2803C7.42678 12.9874 7.42678 12.5126 7.71967 12.2197C8.01256 11.9268 8.48744 11.9268 8.78033 12.2197L11.25 14.6893V2.25C11.25 1.83579 11.5858 1.5 12 1.5ZM6.375 9C6.07663 9 5.79048 9.11853 5.5795 9.3295C5.36853 9.54048 5.25 9.82663 5.25 10.125V19.875C5.25 20.1734 5.36853 20.4595 5.5795 20.6705C5.79048 20.8815 6.07663 21 6.375 21H17.625C17.9234 21 18.2095 20.8815 18.4205 20.6705C18.6315 20.4595 18.75 20.1734 18.75 19.875V10.125C18.75 9.82663 18.6315 9.54048 18.4205 9.3295C18.2095 9.11853 17.9234 9 17.625 9H15.75C15.3358 9 15 8.66421 15 8.25C15 7.83579 15.3358 7.5 15.75 7.5H17.625C18.3212 7.5 18.9889 7.77656 19.4812 8.26884C19.9734 8.76113 20.25 9.42881 20.25 10.125V19.875C20.25 20.5712 19.9734 21.2389 19.4812 21.7312C18.9889 22.2234 18.3212 22.5 17.625 22.5H6.375C5.67881 22.5 5.01113 22.2234 4.51884 21.7312C4.02656 21.2389 3.75 20.5712 3.75 19.875V10.125C3.75 9.42881 4.02656 8.76113 4.51884 8.26884C5.01113 7.77656 5.67881 7.5 6.375 7.5H8.25C8.66421 7.5 9 7.83579 9 8.25C9 8.66421 8.66421 9 8.25 9H6.375Z"
+                    fill="#2E3646"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="modal-container" id="contact">
+      <div class="container flex-right">
+        <div class="modal">
+          <button class="round-button close-modal" onclick="closeContact()">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.75 6.81984L17.1802 5.25L12 10.4302L6.81984 5.25L5.25 6.81984L10.4302 12L5.25 17.1802L6.81984 18.75L12 13.5698L17.1802 18.75L18.75 17.1802L13.5698 12L18.75 6.81984Z"
+                fill="#2E3646"
+              />
+            </svg>
+          </button>
+
+          <div class="modal-content">
+            <h2 class="project-title modal-heading">Get in Touch</h2>
+
+            <div class="button-container">
+              <div class="button-label mail">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.125 5.25C3.50368 5.25 3 5.75368 3 6.375V17.625C3 18.2463 3.50368 18.75 4.125 18.75H19.875C20.4963 18.75 21 18.2463 21 17.625V6.375C21 5.75368 20.4963 5.25 19.875 5.25H4.125ZM1.5 6.375C1.5 4.92525 2.67525 3.75 4.125 3.75H19.875C21.3247 3.75 22.5 4.92525 22.5 6.375V17.625C22.5 19.0747 21.3247 20.25 19.875 20.25H4.125C2.67525 20.25 1.5 19.0747 1.5 17.625V6.375Z"
+                    fill="#2E3646"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.65799 7.03954C4.91229 6.71258 5.3835 6.65368 5.71046 6.90799L12 11.7999L18.2895 6.90799C18.6165 6.65368 19.0877 6.71258 19.342 7.03954C19.5963 7.36651 19.5374 7.83771 19.2105 8.09201L12.4605 13.342C12.1896 13.5527 11.8104 13.5527 11.5395 13.342L4.78954 8.09201C4.46258 7.83771 4.40368 7.36651 4.65799 7.03954Z"
+                    fill="#2E3646"
+                  />
+                </svg>
+              </div>
+              <span class="button-text">iuliana.lupu.dev@gmail</span>
+              <div class="email-button-container">
+                <button class="round-button" onclick="copyToClipboard(event)">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5.24778 1.5L5.25 1.5H15.375L15.3771 1.5C16.2709 1.50255 17.1273 1.85872 17.7593 2.4907C18.3913 3.12268 18.7475 3.97911 18.75 4.87287C18.75 4.87879 18.75 4.8847 18.7498 4.89062L18.7423 5.25H19.0781C20.968 5.25 22.5 6.78203 22.5 8.67188V19.0781C22.5 20.968 20.968 22.5 19.0781 22.5H8.67188C6.78203 22.5 5.25 20.968 5.25 19.0781V18.75H4.875L4.87287 18.75C3.97911 18.7475 3.12268 18.3913 2.4907 17.7593C1.85872 17.1273 1.50255 16.2709 1.5 15.3771L1.5 15.375V5.25L1.5 5.24778C1.50294 4.25471 1.89874 3.30315 2.60094 2.60094C3.30315 1.89874 4.25471 1.50294 5.24778 1.5ZM6.75 19.0781C6.75 20.1395 7.61045 21 8.67188 21H19.0781C20.1395 21 21 20.1395 21 19.0781V8.67188C21 7.61045 20.1395 6.75 19.0781 6.75H17.9791C17.9776 6.75 17.9761 6.75 17.9746 6.75H8.67188C7.61045 6.75 6.75 7.61045 6.75 8.67188V19.0781ZM17.242 5.25H8.67188C6.78203 5.25 5.25 6.78203 5.25 8.67188V17.25H4.87621C4.37913 17.2483 3.90287 17.0501 3.55136 16.6986C3.19987 16.3471 3.00167 15.8709 3 15.3738V5.25119C3.00203 4.65478 3.23986 4.08335 3.66161 3.66161C4.08335 3.23986 4.65478 3.00203 5.25119 3H15.3738C15.8709 3.00167 16.3471 3.19987 16.6986 3.55136C17.0484 3.90117 17.2464 4.37454 17.25 4.86902L17.242 5.25Z"
+                      fill="#2E3646"
+                    />
+                  </svg>
+                </button>
+                <span class="tooltip-text" id="myTooltip"
+                  >Copy to clipboard</span
+                >
+              </div>
+            </div>
+
+            <ul class="socials-list">
+              <li class="socials-item">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.behance.net/iuliana_lupu"
+                  class="socials-link"
+                >
+                  <svg
+                    class="socials-icon"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.8661 18C25.2857 18 24.9286 20.5714 24.9286 20.5714H30.4107C30.4107 20.5714 30.4464 18 27.8661 18Z"
+                      fill="#2E3646"
+                    />
+                    <path
+                      d="M15.4286 20.5714H10.5714V25.0357H15.1875C15.8839 25.0179 17.1875 24.8214 17.1875 22.8661C17.1875 20.5446 15.4286 20.5714 15.4286 20.5714Z"
+                      fill="#2E3646"
+                    />
+                    <path
+                      d="M20 0C8.95536 0 0 8.95536 0 20C0 31.0446 8.95536 40 20 40C31.0446 40 40 31.0446 40 20C40 8.95536 31.0446 0 20 0ZM24.2143 12.2857H31.0982V14.3393H24.2143V12.2857ZM20.7321 23.0714C20.7321 28.1607 15.4286 28 15.4286 28H6.75V11.3036H15.4286C18.0714 11.3036 20.1518 12.7589 20.1518 15.75C20.1518 18.7411 17.6071 18.9286 17.6071 18.9286C20.9643 18.9286 20.7321 23.0714 20.7321 23.0714ZM33.6071 22.7946H24.9554C24.9554 25.8929 27.8929 25.6964 27.8929 25.6964C30.6696 25.6964 30.5714 23.9018 30.5714 23.9018H33.5089C33.5089 28.6696 27.7946 28.3393 27.7946 28.3393C20.9464 28.3393 21.3839 21.9554 21.3839 21.9554C21.3839 21.9554 21.375 15.5446 27.7946 15.5446C34.5536 15.5536 33.6071 22.7946 33.6071 22.7946Z"
+                      fill="#2E3646"
+                    />
+                    <path
+                      d="M16.6071 16.0089C16.6071 14.2768 15.4286 14.2768 15.4286 14.2768H10.5714V18H15.125C15.9107 18 16.6071 17.7411 16.6071 16.0089Z"
+                      fill="#2E3646"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials-item">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://dribbble.com/iuliana_lupu"
+                  class="socials-link"
+                >
+                  <svg
+                    class="socials-icon"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.66602 20C1.66602 16.6755 2.48493 13.6077 4.12268 10.7966C5.76047 7.9855 7.98493 5.76108 10.796 4.12329C13.6071 2.4855 16.6749 1.66663 19.9993 1.66663C23.3238 1.66663 26.3916 2.4855 29.2027 4.12329C32.0138 5.76108 34.2383 7.9855 35.876 10.7966C37.5138 13.6077 38.3327 16.6755 38.3327 20C38.3327 23.3244 37.5138 26.3922 35.876 29.2033C34.2383 32.0144 32.0138 34.2388 29.2027 35.8766C26.3916 37.5144 23.3238 38.3333 19.9993 38.3333C16.6749 38.3333 13.6071 37.5144 10.796 35.8766C7.98493 34.2388 5.76047 32.0144 4.12268 29.2033C2.48493 26.3922 1.66602 23.3244 1.66602 20ZM4.70935 20C4.70935 23.8133 5.99268 27.1744 8.55935 30.0833C9.73268 27.7855 11.5905 25.5978 14.1327 23.52C16.6749 21.4422 19.156 20.1344 21.576 19.5966C21.2094 18.7411 20.8549 17.9711 20.5127 17.2866C16.3083 18.6311 11.7616 19.3033 6.87268 19.3033C5.91935 19.3033 5.21047 19.2911 4.74602 19.2666C4.74602 19.3644 4.73993 19.4866 4.72768 19.6333C4.71547 19.78 4.70935 19.9022 4.70935 20ZM5.18602 16.2233C5.72381 16.2722 6.51826 16.2966 7.56935 16.2966C11.6516 16.2966 15.526 15.7466 19.1927 14.6466C17.3349 11.3466 15.2938 8.59663 13.0693 6.39663C11.1383 7.37442 9.48214 8.73108 8.10102 10.4666C6.71993 12.2022 5.74826 14.1211 5.18602 16.2233ZM10.6493 32.0633C13.4116 34.2144 16.5283 35.29 19.9993 35.29C21.8083 35.29 23.6049 34.9478 25.3894 34.2633C24.9005 30.0833 23.9471 26.0378 22.5294 22.1266C20.2805 22.6155 18.0133 23.85 15.7277 25.83C13.4421 27.81 11.7493 29.8878 10.6493 32.0633ZM16.2593 5.22329C18.4105 7.44775 20.4027 10.2222 22.236 13.5466C25.5605 12.1533 28.066 10.3811 29.7527 8.22996C26.9171 5.88329 23.666 4.70996 19.9993 4.70996C18.7527 4.70996 17.506 4.88108 16.2593 5.22329ZM23.556 16.15C23.9227 16.9322 24.3383 17.9222 24.8027 19.12C26.6116 18.9488 28.5794 18.8633 30.706 18.8633C32.2216 18.8633 33.7249 18.9 35.216 18.9733C35.0205 15.6488 33.8227 12.6911 31.6227 10.1C30.0338 12.4711 27.3449 14.4878 23.556 16.15ZM25.7194 21.6866C26.966 25.3044 27.8094 29.02 28.2494 32.8333C30.1805 31.5866 31.7571 29.9855 32.9794 28.03C34.2016 26.0744 34.9349 23.96 35.1794 21.6866C33.3949 21.5644 31.7694 21.5033 30.3027 21.5033C28.9583 21.5033 27.4305 21.5644 25.7194 21.6866Z"
+                      fill="#2E3646"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              <li class="socials-item">
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href="https://www.instagram.com/julial.design/"
+                  class="socials-link"
+                >
+                  <svg
+                    class="socials-icon"
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_971_2877)">
+                      <path
+                        d="M26.9448 6.1109C28.7851 6.1164 30.5484 6.84986 31.8496 8.1511C33.1508 9.45234 33.8843 11.2156 33.8898 13.0558V26.9442C33.8843 28.7845 33.1508 30.5477 31.8496 31.849C30.5484 33.1502 28.7851 33.8837 26.9448 33.8892H13.0565C11.2162 33.8837 9.45295 33.1502 8.15171 31.849C6.85047 30.5477 6.11701 28.7845 6.11151 26.9442V13.0558C6.11701 11.2156 6.85047 9.45234 8.15171 8.1511C9.45295 6.84986 11.2162 6.1164 13.0565 6.1109H26.9448ZM26.9448 3.33337H13.0565C7.70898 3.33337 3.33398 7.70837 3.33398 13.0558V26.9442C3.33398 32.2917 7.70898 36.6667 13.0565 36.6667H26.9448C32.2923 36.6667 36.6673 32.2917 36.6673 26.9442V13.0558C36.6673 7.70837 32.2923 3.33337 26.9448 3.33337Z"
+                        fill="#2E3646"
+                      />
+                      <path
+                        d="M29.0282 13.0558C28.6161 13.0558 28.2133 12.9337 27.8707 12.7047C27.5281 12.4758 27.2611 12.1504 27.1034 11.7698C26.9457 11.3891 26.9045 10.9702 26.9849 10.5661C27.0653 10.1619 27.2637 9.79073 27.555 9.49937C27.8464 9.20801 28.2176 9.00959 28.6217 8.92921C29.0259 8.84882 29.4448 8.89008 29.8254 9.04776C30.2061 9.20544 30.5315 9.47247 30.7604 9.81507C30.9893 10.1577 31.1115 10.5605 31.1115 10.9725C31.1121 11.2463 31.0586 11.5174 30.9541 11.7705C30.8496 12.0235 30.6962 12.2534 30.5026 12.447C30.3091 12.6405 30.0792 12.794 29.8261 12.8985C29.5731 13.0029 29.3019 13.0564 29.0282 13.0558Z"
+                        fill="#2E3646"
+                      />
+                      <path
+                        d="M20.0007 14.4442C21.0995 14.4442 22.1736 14.7701 23.0873 15.3806C24.0009 15.991 24.713 16.8587 25.1335 17.8739C25.5541 18.8891 25.6641 20.0062 25.4497 21.0839C25.2353 22.1616 24.7062 23.1516 23.9292 23.9286C23.1522 24.7056 22.1623 25.2347 21.0845 25.4491C20.0068 25.6635 18.8897 25.5534 17.8745 25.1329C16.8593 24.7124 15.9916 24.0003 15.3812 23.0867C14.7707 22.173 14.4448 21.0989 14.4448 20C14.4464 18.527 15.0323 17.1148 16.0738 16.0732C17.1154 15.0317 18.5276 14.4458 20.0007 14.4442ZM20.0007 11.6667C18.3525 11.6667 16.7413 12.1554 15.3709 13.0711C14.0005 13.9868 12.9324 15.2883 12.3017 16.811C11.6709 18.3337 11.5059 20.0093 11.8274 21.6258C12.149 23.2423 12.9427 24.7272 14.1081 25.8926C15.2735 27.058 16.7584 27.8517 18.3749 28.1733C19.9914 28.4948 21.667 28.3298 23.1897 27.699C24.7124 27.0683 26.0139 26.0002 26.9296 24.6298C27.8452 23.2594 28.334 21.6482 28.334 20C28.334 17.7899 27.456 15.6703 25.8932 14.1075C24.3304 12.5447 22.2108 11.6667 20.0007 11.6667Z"
+                        fill="#2E3646"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_971_2877">
+                        <rect width="40" height="40" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT  -->
+    <header class="project-header">
+      <div class="project-image-container project-image-container-p4">
+        <img
+          src="./assets/P4-open-image.jpg"
+          alt="Concert"
+          class="project-image"
+        />
+      </div>
+      <div class="pos-rel">
+        <div class="before-heading round-corners"></div>
+      </div>
+      <div class="container">
+        <h1 class="heading2">Explicit-Promotions</h1>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="project-grid4">
+        <div class="col2">
+          <p class="large-text">
+            Explicit Promotions helps independent or starting artists to gain
+            more streams on the streaming platforms and recognition, by
+            providing a targeted campaign and giving access to playlists that
+            are the same as large-scale labels and major recording artists have,
+            at a reasonable price.
+          </p>
+          <p>
+            The purpose of the landing page is to inform about the benefits and
+            process of using the company’s services, eliminate doubts and help
+            users make an informed decision.
+          </p>
+        </div>
+        <div class="project-meta">
+          <div class="line"></div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Type of Project</span>
+            <p class="project-meta-text">Landing Page Redesign</p>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Role</span>
+            <p class="project-meta-text">UX/UI Designer</p>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Date</span>
+            <p class="project-meta-text">June 2023 - July 2023</p>
+          </div>
+          <div class="project-meta-item">
+            <span class="project-meta-label">Link</span>
+            <div class="project-meta-links">
+              <a
+                href="https://music-streams-landing-page.webflow.io/"
+                class="project-meta-text"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Webflow Website
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_1128_2430)">
+                    <path
+                      d="M4.72614 4.57538L19.5754 4.57538L19.5754 19.4246L17.6264 19.4246L17.6264 7.91646L5.4222 20.1207L4.03008 18.7286L16.2343 6.52434L4.72614 6.52434L4.72614 4.57538Z"
+                      fill="#2E3646"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1128_2430">
+                      <rect width="24" height="24" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-grid2">
+        <img
+          src="./assets/P4/P4-1.gif"
+          alt="Users Pain Points"
+          class="round-corners img-shadow span2col"
+        />
+        <!-- <picture class="span2col">
+          <source
+            media="(max-width: 800px)"
+            srcset="./assets/P4/P4-1-min.gif"
+          />
+          <img
+            src="./assets/P4/P4-1.gif"
+            alt="Sign In and Home page design"
+            class="span2col round-corners"
+          />
+        </picture> -->
+
+        <div class="project-text start-row">
+          <h2 class="project-subheading">Redesign Strategy</h2>
+          <p>
+            The goal ot the redesign was to structure the content in a strategic
+            and convincing manner and give it a bold and appealing new look.
+          </p>
+          <p>
+            The final solution aims to follow a series of stages: from
+            presenting the problem, the solution, the benefits, the social proof
+            to answering any final questions, so that the user is guided and
+            provided with all the necessary information to support them make a
+            favorable decision.
+          </p>
+        </div>
+        <img
+          src="./assets/P4/P4-2.jpg"
+          alt="Landing Page Design-full length"
+          class="round-corners span2col"
+        />
+        <img
+          src="./assets/P4/P4-3.jpg"
+          alt="Styles"
+          class="round-corners img-shadow span2col"
+        />
+
+        <div class="project-text start-row">
+          <h2 class="project-subheading">Concept</h2>
+          <p>
+            The resulting solution is a combination of different influences from
+            the musical field, reiterating that the artists and their music are
+            at the core of the company.
+          </p>
+        </div>
+        <img
+          src="./assets/P4/P4-4.jpg"
+          alt="Visual concept - 1. Slide buttons,  2. Sound waves, 3. Graph with vertical bars"
+          class="span2col round-corners img-shadow"
+        />
+
+        <img
+          src="./assets/P4/P4-5.gif"
+          alt="Hero section animation presentation video"
+          class="round-corners start-row"
+        />
+        <img
+          src="./assets/P4/P4-6.gif"
+          alt="Features section animation presentation video"
+          class="round-corners"
+        />
+        <img
+          src="./assets/P4/P4-7.jpg"
+          alt="Features and Testimonials sections presented on desktop format"
+          class="span2col round-corners"
+        />
+        <img
+          src="./assets/P4/P4-8.jpg"
+          alt="Steps section on desktop format"
+          class="round-corners"
+        />
+        <img
+          src="./assets/P4/P4-9.gif"
+          alt="Steps section on desktop format-animation"
+          class="round-corners"
+        />
+        <img
+          src="./assets/P4/P4-10.jpg"
+          alt="FQA and last section presented on desktop format"
+          class="span2col round-corners"
+        />
+
+        <img
+          src="./assets/P4/P4-11.jpg"
+          alt="Hero section design presented on a mobile phone"
+          class="round-corners"
+        />
+        <img
+          src="./assets/P4/P4-12.gif"
+          alt="Hero section animation"
+          class="round-corners"
+        />
+        <img
+          src="./assets/P4/P4-13.jpg"
+          alt="Landing page- phone format screen"
+          class="span2col round-corners"
+        />
+        <img
+          src="./assets/P4/P4-14.gif"
+          alt="Last Section Animation on Desktop"
+          class="round-corners"
+        />
+        <img
+          src="./assets/P4/P4-15.gif"
+          alt="Last Section Animation on Phone Screen"
+          class="round-corners"
+        />
+
+        <!-- <div class="project-text start-row">
+          <h2 class="project-subheading">Takeaways</h2>
+          <p>
+            While designing the Sandwich Shop App I learned that understanding
+            the users needs and pain point from the early stages of the design
+            process is essential, because it helps build a solution that
+            addresses a real user need. In addition, I’ve learned that usability
+            studies and design iterations help build better products, that have
+            the user at the center.
+          </p>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <section class="projects others">
+      <div class="container">
+        <h2 class="heading2 others-heading">Other Projects</h2>
+        <div class="grid4">
+          <!-- This is project 1 -->
+
+          <div class="project">
+            <span class="project-number">02</span>
+            <div class="line"></div>
+            <div class="project-type-parent">
+              <span class="project-type">Responsive Website</span>
+              <span class="project-type">Online Store</span>
+            </div>
+            <h3 class="project-title">
+              <a href="./fragrance-and-light">Fragrance & Light</a>
+            </h3>
+            <p class="project-description">
+              Online Candles Customization and Shopping Experience
+            </p>
+
+            <a href="./fragrance-and-light" class="project-thumbnail-parent">
+              <img
+                src="./assets/P3-thumbnail.jpg"
+                alt="Project 3 thumbnail - the home page of the website displayed on a phone, tablet and laptop"
+                class="project-thumbnail-img"
+              />
+              <img
+                src="./assets/P3-thumbnail-logos.png"
+                alt="Adobe XD"
+                class="project-tools"
+              />
+            </a>
+          </div>
+
+          <div class="project">
+            <span class="project-number">03</span>
+            <div class="line"></div>
+            <div class="project-type-parent">
+              <span class="project-type">Mobile App</span>
+            </div>
+            <h3 class="project-title">
+              <a href="./sandwich-shop-app">Sandwich Shop</a>
+            </h3>
+            <p class="project-description">
+              Menu viewing and online ordering app for a sandwich shop
+            </p>
+
+            <a href="./sandwich-shop-app" class="project-thumbnail-parent">
+              <img
+                src="./assets/P2-thumbnail.jpg"
+                alt="Project 2 thumbnail - the app displayed on the screens of two phones"
+                class="project-thumbnail-img"
+              />
+              <img
+                src="./assets/P2-thumbnail-logos.png"
+                alt="Figma"
+                class="project-tools"
+              />
+            </a>
+          </div>
+
+          <div class="project project-3">
+            <span class="project-number">04</span>
+            <div class="line"></div>
+            <div class="project-type-parent">
+              <span class="project-type">Responsive Website</span>
+              <span class="project-type">Portfolio</span>
+            </div>
+            <h3 class="project-title">
+              <a href="./angle-architecture">Angle-Architecture</a>
+            </h3>
+            <p class="project-description">
+              Projects showcase portfolio website for an architecture firm
+            </p>
+
+            <a href="./angle-architecture" class="project-thumbnail-parent">
+              <img
+                src="./assets/P1-thumbnail.jpg"
+                alt="Project 1 thumbnail - the home page of the website presented on a laptop screen"
+                class="project-thumbnail-img"
+              />
+              <img
+                src="./assets/P1-thumbnail-logos.png"
+                alt="Figma And Webflow"
+                class="project-tools"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT  -->
+    <section class="contact">
+      <div class="container">
+        <h2 class="heading2">Get In Touch</h2>
+        <div class="button-container">
+          <div class="button-label mail">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.125 5.25C3.50368 5.25 3 5.75368 3 6.375V17.625C3 18.2463 3.50368 18.75 4.125 18.75H19.875C20.4963 18.75 21 18.2463 21 17.625V6.375C21 5.75368 20.4963 5.25 19.875 5.25H4.125ZM1.5 6.375C1.5 4.92525 2.67525 3.75 4.125 3.75H19.875C21.3247 3.75 22.5 4.92525 22.5 6.375V17.625C22.5 19.0747 21.3247 20.25 19.875 20.25H4.125C2.67525 20.25 1.5 19.0747 1.5 17.625V6.375Z"
+                fill="#2E3646"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.65799 7.03954C4.91229 6.71258 5.3835 6.65368 5.71046 6.90799L12 11.7999L18.2895 6.90799C18.6165 6.65368 19.0877 6.71258 19.342 7.03954C19.5963 7.36651 19.5374 7.83771 19.2105 8.09201L12.4605 13.342C12.1896 13.5527 11.8104 13.5527 11.5395 13.342L4.78954 8.09201C4.46258 7.83771 4.40368 7.36651 4.65799 7.03954Z"
+                fill="#2E3646"
+              />
+            </svg>
+          </div>
+          <span class="button-text">iuliana.lupu.dev@gmail</span>
+          <div class="email-button-container">
+            <button class="round-button" onclick="copyToClipboard(event)">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M5.24778 1.5L5.25 1.5H15.375L15.3771 1.5C16.2709 1.50255 17.1273 1.85872 17.7593 2.4907C18.3913 3.12268 18.7475 3.97911 18.75 4.87287C18.75 4.87879 18.75 4.8847 18.7498 4.89062L18.7423 5.25H19.0781C20.968 5.25 22.5 6.78203 22.5 8.67188V19.0781C22.5 20.968 20.968 22.5 19.0781 22.5H8.67188C6.78203 22.5 5.25 20.968 5.25 19.0781V18.75H4.875L4.87287 18.75C3.97911 18.7475 3.12268 18.3913 2.4907 17.7593C1.85872 17.1273 1.50255 16.2709 1.5 15.3771L1.5 15.375V5.25L1.5 5.24778C1.50294 4.25471 1.89874 3.30315 2.60094 2.60094C3.30315 1.89874 4.25471 1.50294 5.24778 1.5ZM6.75 19.0781C6.75 20.1395 7.61045 21 8.67188 21H19.0781C20.1395 21 21 20.1395 21 19.0781V8.67188C21 7.61045 20.1395 6.75 19.0781 6.75H17.9791C17.9776 6.75 17.9761 6.75 17.9746 6.75H8.67188C7.61045 6.75 6.75 7.61045 6.75 8.67188V19.0781ZM17.242 5.25H8.67188C6.78203 5.25 5.25 6.78203 5.25 8.67188V17.25H4.87621C4.37913 17.2483 3.90287 17.0501 3.55136 16.6986C3.19987 16.3471 3.00167 15.8709 3 15.3738V5.25119C3.00203 4.65478 3.23986 4.08335 3.66161 3.66161C4.08335 3.23986 4.65478 3.00203 5.25119 3H15.3738C15.8709 3.00167 16.3471 3.19987 16.6986 3.55136C17.0484 3.90117 17.2464 4.37454 17.25 4.86902L17.242 5.25Z"
+                  fill="#2E3646"
+                />
+              </svg>
+            </button>
+            <span class="tooltip-text" id="myTooltip">Copy to clipboard</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="line"></div>
+        <div class="flex footer-content">
+          <span class="copyright">Copyright© 2023</span>
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.behance.net/iuliana_lupu"
+                class="socials-link"
+              >
+                <svg
+                  class="socials-icon"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.8661 18C25.2857 18 24.9286 20.5714 24.9286 20.5714H30.4107C30.4107 20.5714 30.4464 18 27.8661 18Z"
+                    fill="#2E3646"
+                  />
+                  <path
+                    d="M15.4286 20.5714H10.5714V25.0357H15.1875C15.8839 25.0179 17.1875 24.8214 17.1875 22.8661C17.1875 20.5446 15.4286 20.5714 15.4286 20.5714Z"
+                    fill="#2E3646"
+                  />
+                  <path
+                    d="M20 0C8.95536 0 0 8.95536 0 20C0 31.0446 8.95536 40 20 40C31.0446 40 40 31.0446 40 20C40 8.95536 31.0446 0 20 0ZM24.2143 12.2857H31.0982V14.3393H24.2143V12.2857ZM20.7321 23.0714C20.7321 28.1607 15.4286 28 15.4286 28H6.75V11.3036H15.4286C18.0714 11.3036 20.1518 12.7589 20.1518 15.75C20.1518 18.7411 17.6071 18.9286 17.6071 18.9286C20.9643 18.9286 20.7321 23.0714 20.7321 23.0714ZM33.6071 22.7946H24.9554C24.9554 25.8929 27.8929 25.6964 27.8929 25.6964C30.6696 25.6964 30.5714 23.9018 30.5714 23.9018H33.5089C33.5089 28.6696 27.7946 28.3393 27.7946 28.3393C20.9464 28.3393 21.3839 21.9554 21.3839 21.9554C21.3839 21.9554 21.375 15.5446 27.7946 15.5446C34.5536 15.5536 33.6071 22.7946 33.6071 22.7946Z"
+                    fill="#2E3646"
+                  />
+                  <path
+                    d="M16.6071 16.0089C16.6071 14.2768 15.4286 14.2768 15.4286 14.2768H10.5714V18H15.125C15.9107 18 16.6071 17.7411 16.6071 16.0089Z"
+                    fill="#2E3646"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-item">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://dribbble.com/iuliana_lupu"
+                class="socials-link"
+              >
+                <svg
+                  class="socials-icon"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.66602 20C1.66602 16.6755 2.48493 13.6077 4.12268 10.7966C5.76047 7.9855 7.98493 5.76108 10.796 4.12329C13.6071 2.4855 16.6749 1.66663 19.9993 1.66663C23.3238 1.66663 26.3916 2.4855 29.2027 4.12329C32.0138 5.76108 34.2383 7.9855 35.876 10.7966C37.5138 13.6077 38.3327 16.6755 38.3327 20C38.3327 23.3244 37.5138 26.3922 35.876 29.2033C34.2383 32.0144 32.0138 34.2388 29.2027 35.8766C26.3916 37.5144 23.3238 38.3333 19.9993 38.3333C16.6749 38.3333 13.6071 37.5144 10.796 35.8766C7.98493 34.2388 5.76047 32.0144 4.12268 29.2033C2.48493 26.3922 1.66602 23.3244 1.66602 20ZM4.70935 20C4.70935 23.8133 5.99268 27.1744 8.55935 30.0833C9.73268 27.7855 11.5905 25.5978 14.1327 23.52C16.6749 21.4422 19.156 20.1344 21.576 19.5966C21.2094 18.7411 20.8549 17.9711 20.5127 17.2866C16.3083 18.6311 11.7616 19.3033 6.87268 19.3033C5.91935 19.3033 5.21047 19.2911 4.74602 19.2666C4.74602 19.3644 4.73993 19.4866 4.72768 19.6333C4.71547 19.78 4.70935 19.9022 4.70935 20ZM5.18602 16.2233C5.72381 16.2722 6.51826 16.2966 7.56935 16.2966C11.6516 16.2966 15.526 15.7466 19.1927 14.6466C17.3349 11.3466 15.2938 8.59663 13.0693 6.39663C11.1383 7.37442 9.48214 8.73108 8.10102 10.4666C6.71993 12.2022 5.74826 14.1211 5.18602 16.2233ZM10.6493 32.0633C13.4116 34.2144 16.5283 35.29 19.9993 35.29C21.8083 35.29 23.6049 34.9478 25.3894 34.2633C24.9005 30.0833 23.9471 26.0378 22.5294 22.1266C20.2805 22.6155 18.0133 23.85 15.7277 25.83C13.4421 27.81 11.7493 29.8878 10.6493 32.0633ZM16.2593 5.22329C18.4105 7.44775 20.4027 10.2222 22.236 13.5466C25.5605 12.1533 28.066 10.3811 29.7527 8.22996C26.9171 5.88329 23.666 4.70996 19.9993 4.70996C18.7527 4.70996 17.506 4.88108 16.2593 5.22329ZM23.556 16.15C23.9227 16.9322 24.3383 17.9222 24.8027 19.12C26.6116 18.9488 28.5794 18.8633 30.706 18.8633C32.2216 18.8633 33.7249 18.9 35.216 18.9733C35.0205 15.6488 33.8227 12.6911 31.6227 10.1C30.0338 12.4711 27.3449 14.4878 23.556 16.15ZM25.7194 21.6866C26.966 25.3044 27.8094 29.02 28.2494 32.8333C30.1805 31.5866 31.7571 29.9855 32.9794 28.03C34.2016 26.0744 34.9349 23.96 35.1794 21.6866C33.3949 21.5644 31.7694 21.5033 30.3027 21.5033C28.9583 21.5033 27.4305 21.5644 25.7194 21.6866Z"
+                    fill="#2E3646"
+                  />
+                </svg>
+              </a>
+            </li>
+
+            <li class="socials-item">
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://www.instagram.com/julial.design/"
+                class="socials-link"
+              >
+                <svg
+                  class="socials-icon"
+                  width="40"
+                  height="40"
+                  viewBox="0 0 40 40"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_971_2877)">
+                    <path
+                      d="M26.9448 6.1109C28.7851 6.1164 30.5484 6.84986 31.8496 8.1511C33.1508 9.45234 33.8843 11.2156 33.8898 13.0558V26.9442C33.8843 28.7845 33.1508 30.5477 31.8496 31.849C30.5484 33.1502 28.7851 33.8837 26.9448 33.8892H13.0565C11.2162 33.8837 9.45295 33.1502 8.15171 31.849C6.85047 30.5477 6.11701 28.7845 6.11151 26.9442V13.0558C6.11701 11.2156 6.85047 9.45234 8.15171 8.1511C9.45295 6.84986 11.2162 6.1164 13.0565 6.1109H26.9448ZM26.9448 3.33337H13.0565C7.70898 3.33337 3.33398 7.70837 3.33398 13.0558V26.9442C3.33398 32.2917 7.70898 36.6667 13.0565 36.6667H26.9448C32.2923 36.6667 36.6673 32.2917 36.6673 26.9442V13.0558C36.6673 7.70837 32.2923 3.33337 26.9448 3.33337Z"
+                      fill="#2E3646"
+                    />
+                    <path
+                      d="M29.0282 13.0558C28.6161 13.0558 28.2133 12.9337 27.8707 12.7047C27.5281 12.4758 27.2611 12.1504 27.1034 11.7698C26.9457 11.3891 26.9045 10.9702 26.9849 10.5661C27.0653 10.1619 27.2637 9.79073 27.555 9.49937C27.8464 9.20801 28.2176 9.00959 28.6217 8.92921C29.0259 8.84882 29.4448 8.89008 29.8254 9.04776C30.2061 9.20544 30.5315 9.47247 30.7604 9.81507C30.9893 10.1577 31.1115 10.5605 31.1115 10.9725C31.1121 11.2463 31.0586 11.5174 30.9541 11.7705C30.8496 12.0235 30.6962 12.2534 30.5026 12.447C30.3091 12.6405 30.0792 12.794 29.8261 12.8985C29.5731 13.0029 29.3019 13.0564 29.0282 13.0558Z"
+                      fill="#2E3646"
+                    />
+                    <path
+                      d="M20.0007 14.4442C21.0995 14.4442 22.1736 14.7701 23.0873 15.3806C24.0009 15.991 24.713 16.8587 25.1335 17.8739C25.5541 18.8891 25.6641 20.0062 25.4497 21.0839C25.2353 22.1616 24.7062 23.1516 23.9292 23.9286C23.1522 24.7056 22.1623 25.2347 21.0845 25.4491C20.0068 25.6635 18.8897 25.5534 17.8745 25.1329C16.8593 24.7124 15.9916 24.0003 15.3812 23.0867C14.7707 22.173 14.4448 21.0989 14.4448 20C14.4464 18.527 15.0323 17.1148 16.0738 16.0732C17.1154 15.0317 18.5276 14.4458 20.0007 14.4442ZM20.0007 11.6667C18.3525 11.6667 16.7413 12.1554 15.3709 13.0711C14.0005 13.9868 12.9324 15.2883 12.3017 16.811C11.6709 18.3337 11.5059 20.0093 11.8274 21.6258C12.149 23.2423 12.9427 24.7272 14.1081 25.8926C15.2735 27.058 16.7584 27.8517 18.3749 28.1733C19.9914 28.4948 21.667 28.3298 23.1897 27.699C24.7124 27.0683 26.0139 26.0002 26.9296 24.6298C27.8452 23.2594 28.334 21.6482 28.334 20C28.334 17.7899 27.456 15.6703 25.8932 14.1075C24.3304 12.5447 22.2108 11.6667 20.0007 11.6667Z"
+                      fill="#2E3646"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_971_2877">
+                      <rect width="40" height="40" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

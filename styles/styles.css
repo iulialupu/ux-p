@@ -78,7 +78,7 @@ ul{
 
 /* NAV */
 .nav{
-    position: fixed;
+    position: absolute;
     width: 100%;
     top: 16px;
     z-index: 1;
@@ -111,6 +111,8 @@ ul{
 }
 
 .menu-list{
+    position: fixed;
+    right: 120px;
     display: flex;
     padding: 16px 8px;
     border-radius: 32px;
@@ -124,8 +126,8 @@ ul{
 }
 .menu-text{
     color: var(--text-color);
-    padding: 16px 40px;
-    line-height: 28px;
+    padding: 16px 36px;
+    line-height: 24px;
     transition: color 0.3s;
 }
 .menu-text:hover{
@@ -133,7 +135,7 @@ ul{
 }
 .menu-line{
     display: block;
-    height: 27px;
+    height: 16px;
     width: 1px;
     background-color: var(--text-color);
     opacity: 20%;
@@ -200,7 +202,7 @@ ul{
 
 /* INTRO */
 .intro{
-    padding: 160px 0 40px;
+    padding: 160px 0 120px;
 }
 .intro-container{
     align-items: end;
@@ -437,6 +439,9 @@ display: none;
     .container{
         padding: 0 80px;
     }
+    .menu-list{
+        right: 80px;
+    }
     .logo-img{
         width: 32px;
     }
@@ -564,6 +569,9 @@ display: none;
     .container{
         padding: 0 10%;
     }
+    .menu-list{
+        right: 10%;
+    }
     .heading2{
         font-size: 48px;
         line-height: 64px;
@@ -646,7 +654,9 @@ display: none;
     .container{
         padding: 0 8px;
     }
-
+    .menu-list{
+        right: 8px;
+    }
     .intro-container.grid2{
         row-gap: 40px;
     }
@@ -706,6 +716,9 @@ display: none;
 }
 .project-image-container-p3{
     background-image: url("../assets/P3-open-image.jpg");
+}
+.project-image-container-p4{
+    background-image: url("../assets/P4-open-image.jpg");
 }
 .project-image{
     position: relative;
